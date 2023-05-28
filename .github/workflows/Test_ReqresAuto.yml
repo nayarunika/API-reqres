@@ -1,1 +1,38 @@
+name: Test Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  api_test:
+    name: API Test
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Newman
+        run: npm install -g newman@5
+
+      - name: Set up API Test environment
+        run: |
+          npm install
+          cp Reqres.json tests/
+          cp Reqres.in.postman_environment.json tests/
+          
+
+      - name: Run API Test
+        run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
+
+      - name: Save Newman Report
+        run: |
+          mkdir -p test-results
+          cp newman/*.html test-results/
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: API Test Results
+          path: test-results/
 
