@@ -8,7 +8,7 @@ This repository contains an API collection for testing various endpoints of the 
 - [Endpoints](#endpoints)
 - [Getting Started](#getting-started)
 - [Test Execution](#test-execution)
-- [Create bat file](#Bat File)
+- [Bat file](#Bat-File)
 
 ## Introduction
 
