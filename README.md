@@ -94,14 +94,14 @@ For example, the shell command:
 bash
 
 #!/bin/bash
-newman run <path-to-collection-file>.json -e <path-to-data-file>.json
+newman run (path-to-collection-file).json -e (path-to-data-file).json
 
 Becomes:
 
 vbnet
 
 @echo off
-newman run <path-to-collection-file>.json -e <path-to-data-file>.json
+newman run (path-to-collection-file).json -e (path-to-data-file).json
 
 Save the file with a .bat extension: Save the file with a .bat extension, such as api_test.bat.
 
