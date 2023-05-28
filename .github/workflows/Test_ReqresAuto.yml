@@ -34,7 +34,7 @@ jobs:
       - name: Save Newman Report
         run: |
           mkdir -p test-results
-          cp newman/*.html test-results/
+          cp "newman/*.html test-results/"
 
       - name: Upload test results
         uses: actions/upload-artifact@v2
