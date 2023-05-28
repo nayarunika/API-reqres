@@ -15,8 +15,8 @@
 						"exec": [
 							"var responseBody = pm.response.json();\r",
 							"var id = responseBody.id;\r",
-							"\r",
 							"pm.collectionVariables.set(\"userId\", id);\r",
+							"\r",
 							"pm.test(\"Status code is 201\", function () {\r",
 							"    pm.response.to.have.status(201);\r",
 							"pm.test(\"Body matches string\", function () {\r",
@@ -161,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "49da863b-1980-42ff-a39e-a9e11cc395e5",
+			"id": "1e64e685-2681-49d9-9921-772f07a2bda0",
 			"key": "userId",
 			"value": ""
 		}
