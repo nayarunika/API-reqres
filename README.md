@@ -72,9 +72,46 @@ Export Collection: Export the Postman collection containing the above requests a
 
 execute using this command
 
-newman run (path-to-collection-file).json -r cli,json
+newman run (path-to-collection-file).json -e(path-to-collection-environtment-file).json -r cli,json
 
 Replace (path-to-collection-file) with the path to the exported collection JSON file, 
+Replace (path-to-collection-environtment-file) with the path to exorted collection environtment JSON file,
+
+If you want to make it short just convert it to js file. 
+
+Create a new file with the .bat extension: Open a text editor (e.g., Notepad) and create a new file.
+
+Copy the shell command into the file: Copy the shell command used to run the Newman test and paste it into the newly created file.
+
+Adjust the syntax for Windows Command Prompt:
+
+    Replace the shebang (#!/bin/bash) at the beginning of the shell command with @echo off.
+    Replace the forward slashes (/) with backslashes (\) in the file paths.
+    Remove the .sh file extension from the file name.
+
+For example, the shell command:
+
+bash
+
+#!/bin/bash
+newman run <path-to-collection-file>.json -e <path-to-data-file>.json
+
+Becomes:
+
+vbnet
+
+@echo off
+newman run <path-to-collection-file>.json -e <path-to-data-file>.json
+
+Save the file with a .bat extension: Save the file with a .bat extension, such as api_test.bat.
+
+Execute the batch file in Windows Command Prompt: Open the Windows Command Prompt, navigate to the directory where the batch file is saved, and run the batch file by entering its name. For example:
+
+    api_test.bat
+
+    This will execute the Newman test using the batch file in the Windows Command Prompt.
+
+By following these steps, you can convert the shell command to a batch file that can be executed in the Windows Command Prompt.
 
 Observe the Newman execution: The Newman tool will execute the API requests one by one and display the results on the command prompt.
 
