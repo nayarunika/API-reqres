@@ -22,7 +22,8 @@
 							"pm.test(\"Body matches string\", function () {\r",
 							"    pm.expect(pm.response.text()).to.include(\"id\");\r",
 							"});\r",
-							"});"
+							"});\r",
+							"console.log(pm.response.json()); // Log the entire response body"
 						],
 						"type": "text/javascript"
 					}
@@ -160,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "bec133fe-72c2-4256-abfe-0c13e514d94f",
+			"id": "8fb0f82d-b048-4083-9724-e4f9e5ce408a",
 			"key": "userId",
 			"value": ""
 		}
