@@ -27,7 +27,7 @@ jobs:
           Copy-Item -Path "Postman Collections/Reqres.in.postman_environment.json" -Destination "tests"
 
       - name: Run API Test
-        run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
+        run: newman run "tests/Postman Collections/Reqres.json" -e "tests/Postman Collections/Reqres.in.postman_environment.json"
 
       - name: Save Newman Report
         run: |
