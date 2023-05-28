@@ -92,7 +92,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://reqres.in/api/users/{{userId}}"
+				"url": "{{baseurl}}/{{userId}}"
 			},
 			"response": []
 		},
@@ -161,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "35fde9bb-bf14-4946-a579-523735bdc062",
+			"id": "ab95f253-0475-460c-b97f-d983fb1294d7",
 			"key": "userId",
 			"value": ""
 		}
