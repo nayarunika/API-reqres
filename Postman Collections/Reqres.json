@@ -126,7 +126,7 @@
 					"mode": "raw",
 					"raw": "{\r\n    \"name\": \"Moduit\"\r\n}"
 				},
-				"url": "https://reqres.in/api/users/{{userId}}"
+				"url": "{{baseurl}}/{{userId}}"
 			},
 			"response": []
 		},
@@ -161,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "8d4c4dde-ff0c-4220-86ba-d4faa707150b",
+			"id": "eb7e9a27-4d58-4f3b-b73a-b7d427193b23",
 			"key": "userId",
 			"value": ""
 		}
