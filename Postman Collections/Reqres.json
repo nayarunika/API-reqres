@@ -154,14 +154,14 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": "https://reqres.in/api/users/{{userId}}"
+				"url": "{{baseurl}}/{{userId}}"
 			},
 			"response": []
 		}
 	],
 	"variable": [
 		{
-			"id": "eb7e9a27-4d58-4f3b-b73a-b7d427193b23",
+			"id": "1028ae0c-7caa-493a-b674-57878748c35e",
 			"key": "userId",
 			"value": ""
 		}
