@@ -23,8 +23,8 @@ jobs:
       - name: Set up API Test environment
         run: |
           mkdir -p tests
-          Copy-Item -Path API-reqres/Postman Collections/Reqres.json -Destination tests/Reqres.json
-          Copy-Item -Path API-reqres/Postman Collections/api-environment.json -Destination tests/api-environment.json
+          Copy-Item -Path "API-reqres/Postman Collections/Reqres.json" -Destination "tests"
+          Copy-Item -Path "API-reqres/Postman Collections/api-environment.json" -Destination "tests"
 
       - name: Run API Test
         run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
