@@ -31,6 +31,9 @@ jobs:
           npm install -g newman
           newman run "tests/Reqres.json" -e "tests/Reqrespostman_environment.json"
 
+      - name: Create Newman directory
+        run: mkdir newman
+
       - name: Save Newman Report
         run: |
           mkdir -p test-results
