@@ -23,8 +23,8 @@ jobs:
       - name: Set up API Test environment
         run: |
           mkdir -p tests
-          cp "tests/Postman Collections/Reqres.json" tests/
-          cp "tests/Postman Collections/Reqrespostman_environment.json" tests/
+          cp "Postman Collections/Reqres.json" tests/
+          cp "Postman Collections/Reqrespostman_environment.json" tests/
      
       - name: Run API Test
         run: |
