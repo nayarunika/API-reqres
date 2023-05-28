@@ -8,8 +8,7 @@ This repository contains an API collection for testing various endpoints of the 
 - [Endpoints](#endpoints)
 - [Getting Started](#getting-started)
 - [Test Execution](#test-execution)
-- [Contributing](#contributing)
-- [License](#license)
+- [Create bat file](#Bat File)
 
 ## Introduction
 
@@ -49,7 +48,7 @@ Configure environment variables: Set up any required environment variables for t
 
 Review and update variables: Review the variable placeholders in the API requests and update them with appropriate values if needed (e.g., user IDs).
 
-Test Execution
+## Test Execution
 Once you have imported the API collection and set up the environment, follow these steps to execute the tests:
 
 Run the desired API requests: Execute the requests in the API collection to perform various user operations such as creating, retrieving, updating, and deleting users.
@@ -77,7 +76,9 @@ newman run (path-to-collection-file).json -e(path-to-collection-environtment-fil
 Replace (path-to-collection-file) with the path to the exported collection JSON file, 
 Replace (path-to-collection-environtment-file) with the path to exorted collection environtment JSON file,
 
-If you want to make it short just convert it to js file. 
+## Bat File
+
+If you want to make it short just convert it to bat file. 
 
 Create a new file with the .bat extension: Open a text editor (e.g., Notepad) and create a new file.
 
