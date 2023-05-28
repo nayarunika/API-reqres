@@ -23,8 +23,8 @@ jobs:
       - name: Set up API Test environment
         run: |
           npm install
-          cp Reqres.json tests/
-          cp Reqres.in.postman_environment.json tests/
+          cp API-reqres/Postman\ Collection/Reqres.json tests/
+          cp API-reqres/Postman\ Collection/Reqres.in.postman_environment.json tests/
           
 
       - name: Run API Test
