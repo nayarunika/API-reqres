@@ -38,7 +38,7 @@
 					}
 				}
 			],
-			"_postman_id": "3cdbb179-f46d-4ba4-8e4d-2c7680d4503d",
+			"id": "3cdbb179-f46d-4ba4-8e4d-2c7680d4503d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -47,10 +47,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{ \"name\": \"Joko Wow\", \"job\": \"UluUlu\" }",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{ \"name\": \"Joko Wow\", \"job\": \"UluUlu\" }"
 				},
 				"url": "https://reqres.in/api/users"
 			},
@@ -87,7 +84,7 @@
 					}
 				}
 			],
-			"_postman_id": "08136f3e-858e-4a6a-b79e-597a418849cb",
+			"id": "08136f3e-858e-4a6a-b79e-597a418849cb",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -117,7 +114,7 @@
 					}
 				}
 			],
-			"_postman_id": "f8e74688-be83-47ba-917b-f97a06745506",
+			"id": "f8e74688-be83-47ba-917b-f97a06745506",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -126,10 +123,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"Moduit\"\r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{\r\n    \"name\": \"Moduit\"\r\n}"
 				},
 				"url": "https://reqres.in/api/users/{{userId}}"
 			},
@@ -152,7 +146,7 @@
 					}
 				}
 			],
-			"_postman_id": "5cbe33bb-9052-4c51-ad61-79737e53268d",
+			"id": "5cbe33bb-9052-4c51-ad61-79737e53268d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -166,10 +160,9 @@
 	],
 	"variable": [
 		{
-			"id": "ed687627-884d-4b2d-a981-da52f8ca0999",
+			"id": "bec133fe-72c2-4256-abfe-0c13e514d94f",
 			"key": "userId",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
