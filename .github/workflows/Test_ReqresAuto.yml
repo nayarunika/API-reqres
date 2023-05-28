@@ -21,11 +21,11 @@ jobs:
         run: npm install -g newman@5
 
       - name: Set up API Test environment
-        run: |
-          npm install
-          cp API-reqres/Postman\ Collection/Reqres.json tests/
-          cp API-reqres/Postman\ Collection/Reqres.in.postman_environment.json tests/
-          
+  run: |
+    npm install
+    mkdir -p tests
+    cp API-reqres/Postman\ Collection/Reqres.json tests/Reqres.json
+    cp API-reqres/Postman\ Collection/api-environment.json tests/api-environment.json
 
       - name: Run API Test
         run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
