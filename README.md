@@ -72,9 +72,9 @@ Export Collection: Export the Postman collection containing the above requests a
 
 execute using this command
 
-newman run <path-to-collection-file>.json -r cli,json
+newman run (path-to-collection-file).json -r cli,json
 
-Replace <path-to-collection-file> with the path to the exported collection JSON file, 
+Replace (path-to-collection-file) with the path to the exported collection JSON file, 
 
 Observe the Newman execution: The Newman tool will execute the API requests one by one and display the results on the command prompt.
 
