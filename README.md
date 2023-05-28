@@ -60,7 +60,21 @@ Validate the functionality: Verify that the user operations, such as creating a 
 
 Analyze test results: Record the test results and any issues encountered during testing. Identify any failures or unexpected behavior and troubleshoot accordingly.
 
-Contributing
-Contributions to this API collection testing project are welcome! If you have any improvements, bug fixes, or additional tests to suggest, feel free to open an issue or submit a pull request.
+To execute these requests sequentially using Newman, follow these steps:
 
-When contributing, please follow the existing coding style, include appropriate documentation, and ensure that the tests are passing.
+    Install Node.js: Make sure you have Node.js installed on your machine.
+
+    Install Newman: Open the command prompt and run the following command to install Newman globally:
+
+npm install -g newman
+
+Export Collection: Export the Postman collection containing the above requests as a JSON file.
+
+execute using this command
+
+newman run <path-to-collection-file>.json -r cli,json
+
+Replace <path-to-collection-file> with the path to the exported collection JSON file, 
+
+Observe the Newman execution: The Newman tool will execute the API requests one by one and display the results on the command prompt.
+
