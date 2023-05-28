@@ -19,13 +19,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Set up API Test environment
+        
+ - name: Set up API Test environment
         run: |
-          mkdir -p tests
-          Copy-Item -Path "Postman Collections/Reqres.json" -Destination "tests"
-          Copy-Item -Path "Postman Collections/Reqrespostman_environment.json" -Destination "tests"
-
+          Copy-Item -Path "tests/Postman Collections/Reqres.json" -Destination "tests"
+          Copy-Item -Path "tests/Postman Collections/Reqrespostman_environment.json" -Destination "tests"
+     
       - name: Run API Test
         run: newman run "tests/Postman Collections/Reqres.json" -e "tests/Postman Collections/Reqrespostman_environment.json"
 
