@@ -10,21 +10,21 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v2
         with:
           node-version: 16
 
       - name: Install dependencies
         run: npm install
 
-    - name: Set up API Test environment
-  run: |
-    mkdir -p tests
-    Copy-Item -Path "API-reqres/Postman Collection/Reqres.json" -Destination "tests/Reqres.json"
-    Copy-Item -Path "API-reqres/Postman Collection/api-environment.json" -Destination "tests/api-environment.json"
+      - name: Set up API Test environment
+        run: |
+          mkdir -p tests
+          Copy-Item -Path API-reqres/Postman\ Collection/Reqres.json -Destination tests/Reqres.json
+          Copy-Item -Path API-reqres/Postman\ Collection/api-environment.json -Destination tests/api-environment.json
 
       - name: Run API Test
         run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
