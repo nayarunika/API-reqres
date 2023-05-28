@@ -24,10 +24,10 @@ jobs:
         run: |
           mkdir -p tests
           Copy-Item -Path "Postman Collections/Reqres.json" -Destination "tests"
-          Copy-Item -Path "Postman Collections/Reqres.in.postman_environment.json" -Destination "tests"
+          Copy-Item -Path "Postman Collections/Reqrespostman_environment.json" -Destination "tests"
 
       - name: Run API Test
-        run: newman run "tests/Postman Collections/Reqres.json" -e "tests/Postman Collections/Reqres.in.postman_environment.json.json"
+        run: newman run "tests/Postman Collections/Reqres.json" -e "tests/Postman Collections/Reqrespostman_environment.json"
 
       - name: Save Newman Report
         run: |
