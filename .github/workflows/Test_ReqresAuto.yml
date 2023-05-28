@@ -17,15 +17,17 @@ jobs:
         with:
           node-version: 16
 
-      - name: Set up Newman
-        run: npm install -g newman@5
+      - name: Install dependencies
+        run: npm install
 
       - name: Set up API Test environment
-  run: |
-    npm install
-    mkdir -p tests
-    cp API-reqres/Postman\ Collection/Reqres.json tests/Reqres.json
-    cp API-reqres/Postman\ Collection/api-environment.json tests/api-environment.json
+        run: |
+          mkdir -p tests
+          cp API-reqres/Postman\ Collection/Reqres.json tests/Reqres.json
+          cp API-reqres/Postman\ Collection/api-environment.json tests/api-environment.json
+
+      # Rest of the steps...
+
 
       - name: Run API Test
         run: newman run tests/Postman Collections/Reqres.json -e tests/Postman Collections/Reqres.in.postman_environment.json.json
