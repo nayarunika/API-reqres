@@ -20,11 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Set up API Test environment
-        run: |
-          mkdir -p tests
-          cp API-reqres/Postman\ Collection/Reqres.json tests/Reqres.json
-          cp API-reqres/Postman\ Collection/api-environment.json tests/api-environment.json
+    - name: Set up API Test environment
+  run: |
+    mkdir -p tests
+    Copy-Item -Path "API-reqres/Postman Collection/Reqres.json" -Destination "tests/Reqres.json"
+    Copy-Item -Path "API-reqres/Postman Collection/api-environment.json" -Destination "tests/api-environment.json"
 
       # Rest of the steps...
 
