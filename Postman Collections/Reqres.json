@@ -50,7 +50,7 @@
 					"mode": "raw",
 					"raw": "{ \"name\": \"Joko Wow\", \"job\": \"UluUlu\" }"
 				},
-				"url": "https://reqres.in/api/users"
+				"url": "{{baseurl}}"
 			},
 			"response": []
 		},
@@ -161,7 +161,7 @@
 	],
 	"variable": [
 		{
-			"id": "02f7737b-d61c-4024-bcb3-a8894cfa38ce",
+			"id": "8d4c4dde-ff0c-4220-86ba-d4faa707150b",
 			"key": "userId",
 			"value": ""
 		}
